@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Favourite Shops</string>
+    <string name="button_addShop">Add Shop</string>
+    <string name="hint_shopTitle">Shop Name</string>
+    <string name="hint_shopDescription">Description of the Shop Goods </string>
+    <string name="menu_addShop">Add</string>
+</resources>
