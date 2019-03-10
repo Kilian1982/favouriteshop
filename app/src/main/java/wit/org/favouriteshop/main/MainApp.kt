@@ -3,11 +3,11 @@ package wit.org.favouriteshop.main
 import android.app.Application
 import org.jetbrains.anko.AnkoLogger
 import org.jetbrains.anko.info
-import wit.org.favouriteshop.models.FavouriteshopModel
+import wit.org.favouriteshop.models.ShopMemStore
 
 class MainApp : Application(), AnkoLogger{
 
-    val shops = ArrayList<FavouriteshopModel>()
+    val shops = ShopMemStore()
 
     override fun onCreate() {
         super.onCreate()

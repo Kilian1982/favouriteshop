@@ -4,4 +4,5 @@
     <string name="hint_shopTitle">Shop Name</string>
     <string name="hint_shopDescription">Description of the Shop Goods </string>
     <string name="menu_addShop">Add</string>
+    <string name="menu_cancelShop">Cancel</string>
 </resources>
