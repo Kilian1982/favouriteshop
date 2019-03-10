@@ -1,5 +1,6 @@
 package wit.org.favouriteshop.activities
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -36,6 +37,11 @@ class ShopListActivity: AppCompatActivity(), ShopListener {
     }
     override fun onShopClick(shop: FavouriteshopModel) {
         startActivityForResult(intentFor<MainActivity>().putExtra("shop_edit", shop), 0)
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        recyclerView.adapter?.notifyDataSetChanged()
+        super.onActivityResult(requestCode, resultCode, data)
     }
 }
 

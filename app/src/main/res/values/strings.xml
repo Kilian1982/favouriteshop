@@ -5,4 +5,8 @@
     <string name="hint_shopDescription">Description of the Shop Goods </string>
     <string name="menu_addShop">Add</string>
     <string name="menu_cancelShop">Cancel</string>
+    <string name="enter_shop_title"> Please enter a Shop Name </string>
+    <string name="save_shop"> Save Shop </string>
+    <string name="button_addShopImage"> Add Image of Shop Front </string>
+    <string name="select_shop_image">Select Shop image</string>
 </resources>
