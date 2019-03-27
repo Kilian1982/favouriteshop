@@ -6,13 +6,15 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.card_shop.view.*
 import wit.org.favouriteshop.R
+import wit.org.favouriteshop.helpers.readImageFromPath
 import wit.org.favouriteshop.models.FavouriteshopModel
 
 interface ShopListener {
     fun onShopClick(shop: FavouriteshopModel)
 }
 
-class ShopAdapter constructor(private var shops: List<FavouriteshopModel>, private val listener: ShopListener) : RecyclerView.Adapter<ShopAdapter.MainHolder>() {
+class ShopAdapter constructor(private var shops: List<FavouriteshopModel>,
+                              private val listener: ShopListener) : RecyclerView.Adapter<ShopAdapter.MainHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainHolder {
         return MainHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_shop, parent, false))
@@ -30,6 +32,7 @@ class ShopAdapter constructor(private var shops: List<FavouriteshopModel>, priva
         fun bind(shop: FavouriteshopModel, listener: ShopListener) {
             itemView.shopTitle.text = shop.title
             itemView.description.text = shop.description
+            itemView.imageIcon.setImageBitmap(readImageFromPath(itemView.context, shop.image))
             itemView.setOnClickListener { listener.onShopClick(shop) }
         }
     }

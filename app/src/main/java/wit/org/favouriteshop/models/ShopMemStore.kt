@@ -21,12 +21,18 @@ class ShopMemStore : ShopStore, AnkoLogger {
         shops.add(shop)
         logAll()
     }
-
+    override fun delete(shop: FavouriteshopModel){
+        shops.remove(shop)
+    }
     override fun update(shop:FavouriteshopModel){
         var foundShop:FavouriteshopModel? = shops.find {p-> p.id == shop.id}
         if(foundShop != null){
             foundShop.title = shop.title
             foundShop.description = shop.description
+            foundShop.image = shop.image
+            foundShop.lat = shop.lat
+            foundShop.lng = shop.lng
+            foundShop.zoom = shop.zoom
             logAll()
         }
     }
