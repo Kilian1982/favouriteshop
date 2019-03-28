@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         info("MainActivity has started")
-        //toolbarAdd.title = title
-        //setSupportActionBar(toolbarAdd)
+        toolbarAdd.title = title
+        setSupportActionBar(toolbarAdd)
         app = application as MainApp
 
         if (intent.hasExtra("shop_edit")) {

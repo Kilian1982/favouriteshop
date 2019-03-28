@@ -1,8 +1,8 @@
 package wit.org.favouriteshop.activities
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.view.*
 import kotlinx.android.synthetic.main.activity_shop_list.*
@@ -12,7 +12,6 @@ import org.jetbrains.anko.startActivityForResult
 import wit.org.favouriteshop.R
 import wit.org.favouriteshop.main.MainApp
 import wit.org.favouriteshop.models.FavouriteshopModel
-import wit.org.favouriteshop.activities.ShopMapsActivity
 
 class ShopListActivity: AppCompatActivity(), ShopListener {
 
