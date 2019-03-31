@@ -5,7 +5,9 @@ import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.google.gson.reflect.TypeToken
 import org.jetbrains.anko.AnkoLogger
-import wit.org.favouriteshop.helpers.*
+import wit.org.favouriteshop.helpers.exists
+import wit.org.favouriteshop.helpers.read
+import wit.org.favouriteshop.helpers.write
 import java.util.*
 
 val JSON_FILE = "shops.json"
@@ -43,8 +45,8 @@ class ShopJSONStore : ShopStore, AnkoLogger {
     }
 
     override fun update(shop : FavouriteshopModel) {
-        val shopsList = findAll()as ArrayList<FavouriteshopModel>
-        var foundShop: FavouriteshopModel? = shopsList.find {p -> p.id ==shop.id}
+        val shopsList = findAll() as ArrayList<FavouriteshopModel>
+        var foundShop: FavouriteshopModel? = shopsList.find { p -> p.id == shop.id }
         if(foundShop != null){
             foundShop.title = shop.title
             foundShop.description =shop.description

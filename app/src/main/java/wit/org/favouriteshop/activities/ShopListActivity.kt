@@ -24,11 +24,13 @@ class ShopListActivity: AppCompatActivity(), ShopListener {
 
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
-        //recyclerView.adapter = ShopAdapter(app.shops.findAll(),this)
         loadShops()
 
-        //toolbarMain.title = title
-        //setSupportActionBar(toolbarMain)
+        toolbarMain.title = title
+        setSupportActionBar(toolbarMain)
+    }
+    override fun onShopClick(shop: FavouriteshopModel) {
+        startActivityForResult(intentFor<MainActivity>().putExtra("shop_edit", shop), 0)
     }
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_main, menu)
@@ -38,14 +40,10 @@ class ShopListActivity: AppCompatActivity(), ShopListener {
         when (item?.itemId) {
             R.id.item_add -> startActivityForResult<MainActivity>(200)
             R.id.item_map -> startActivity<ShopMapsActivity>()
-            R.id.item_cancel -> { finish()}
+            R.id.item_cancel -> { finish() }
         }
         return super.onOptionsItemSelected(item)
     }
-    override fun onShopClick(shop: FavouriteshopModel) {
-        startActivityForResult(intentFor<MainActivity>().putExtra("shop_edit", shop), 0)
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         loadShops()
         super.onActivityResult(requestCode, resultCode, data)

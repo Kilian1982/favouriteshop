@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
                 finish()
             }
             shopLocation.setOnClickListener {
-                val location = Location(52.245696, -7.139102, 15f)
+                val location = Location(52.245696, -7.139102, 16f)
                 if(shop.zoom != 0f){
                     location.lat =shop.lat
                     location.lng =shop.lng
@@ -117,9 +117,9 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
                 LOCATION_REQUEST -> {
                     if (data != null) {
                         val location = data.extras.getParcelable<Location>("location")
-                        location.lat =shop.lat
-                        location.lng =shop.lng
-                        location.zoom = shop.zoom
+                        shop.lat = location.lat
+                        shop.lng = location.lng
+                        shop.zoom= location.zoom
                     }
                 }
             }

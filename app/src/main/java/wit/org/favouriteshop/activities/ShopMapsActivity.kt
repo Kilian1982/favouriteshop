@@ -7,8 +7,8 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.gms.maps.model.Marker
-import wit.org.favouriteshop.R
 import kotlinx.android.synthetic.main.activity_shop_maps.*
+import wit.org.favouriteshop.R
 import kotlinx.android.synthetic.main.content_shop_maps.*
 import wit.org.favouriteshop.main.MainApp
 
@@ -20,8 +20,8 @@ class ShopMapsActivity: AppCompatActivity(), GoogleMap.OnMarkerClickListener{
         super.onCreate(savedInstanceState)
         app = application as MainApp
         setContentView(R.layout.activity_shop_maps)
-        setSupportActionBar(toolbar)
-        mapView.onCreate(savedInstanceState);
+        setSupportActionBar(toolbarMaps)
+        mapView.onCreate(savedInstanceState)
         mapView.getMapAsync {
             map = it
             configureMap()
@@ -51,21 +51,22 @@ class ShopMapsActivity: AppCompatActivity(), GoogleMap.OnMarkerClickListener{
             super.onSaveInstanceState(outState)
             mapView.onSaveInstanceState(outState)
         }
+        fun configureMap() {
+        map.uiSettings.setZoomControlsEnabled(true)
+        app.shops.findAll().forEach {
+            val loc = LatLng(it.lat, it.lng)
+            val options = MarkerOptions().title(it.title).position(loc)
+            map.addMarker(options).tag = it.id
+            map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, it.zoom))
+            map.setOnMarkerClickListener(this)
+        }
+    }
         override fun onMarkerClick(marker: Marker): Boolean {
             currentTitle.text = marker.title
             //trying to add the description as well
-            //currentDescription.text = marker.
+            //currentDescription.text = marker.description
             return false
         }
-        fun configureMap() {
-            map.uiSettings.setZoomControlsEnabled(true)
-            app.shops.findAll().forEach {
-                val loc = LatLng(it.lat, it.lng)
-                val options = MarkerOptions().title(it.title).position(loc)
-                map.addMarker(options).tag = it.id
-                map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, it.zoom))
-                map.setOnMarkerClickListener(this)
-            }
-        }
+
     }
 
