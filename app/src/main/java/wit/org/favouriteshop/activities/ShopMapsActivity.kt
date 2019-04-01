@@ -52,10 +52,10 @@ class ShopMapsActivity: AppCompatActivity(), GoogleMap.OnMarkerClickListener{
             mapView.onSaveInstanceState(outState)
         }
         fun configureMap() {
-        map.uiSettings.setZoomControlsEnabled(true)
+            map.uiSettings.isZoomControlsEnabled = true
         app.shops.findAll().forEach {
             val loc = LatLng(it.lat, it.lng)
-            val options = MarkerOptions().title(it.title).position(loc)
+            val options = MarkerOptions().title(it.title).position(loc)//;MarkerOptions().description(it.description).position(loc)
             map.addMarker(options).tag = it.id
             map.moveCamera(CameraUpdateFactory.newLatLngZoom(loc, it.zoom))
             map.setOnMarkerClickListener(this)

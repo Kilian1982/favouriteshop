@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "834301957865",
+    "firebase_url": "https://favouriteshop-eeeee.firebaseio.com",
+    "project_id": "favouriteshop-eeeee",
+    "storage_bucket": "favouriteshop-eeeee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:834301957865:android:f218bc1b44de4819",
+        "android_client_info": {
+          "package_name": "wit.org.favouriteshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "834301957865-97sd4p691jb7867eqcit904ma2ogd64a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "wit.org.favouriteshop",
+            "certificate_hash": "c850d704be00c0bed416a548f9a680407cfe38dc"
+          }
+        },
+        {
+          "client_id": "834301957865-q0moeo97fjd9tpkbgmcdvb4dr5sduevn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhrC2M2bJg63B16XxoQmsSCadfNwUzLoU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "834301957865-q0moeo97fjd9tpkbgmcdvb4dr5sduevn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

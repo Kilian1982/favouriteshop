@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
         toolbarAdd.title = title
         setSupportActionBar(toolbarAdd)
         app = application as MainApp
-
+        //edit = true
         if (intent.hasExtra("shop_edit")) {
             edit = true
             shop = intent.extras.getParcelable<FavouriteshopModel>("shop_edit")
@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
 
             }
 
-            btnAdd.setOnClickListener() {
+            btnAdd.setOnClickListener {
                 shop.title = shopTitle.text.toString()
                 shop.description = description.text.toString()
                 if (shop.title.isEmpty()) {
@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
                 finish()
             }
             shopLocation.setOnClickListener {
-                val location = Location(52.245696, -7.139102, 16f)
+                val location = Location(52.245696, -7.139102, 14f)
                 if(shop.zoom != 0f){
                     location.lat =shop.lat
                     location.lng =shop.lng
@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity(), AnkoLogger {
             when (requestCode) {
                 IMAGE_REQUEST -> {
                     if (data != null) {
-                        shop.image = data.getData().toString()
+                        shop.image = data.data.toString()
                         shopImage.setImageBitmap(readImage(this, resultCode, data))
                         chooseImage.setText(R.string.change_shop_image)
                     }
