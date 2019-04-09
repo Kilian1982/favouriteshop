@@ -1,6 +1,6 @@
 ## Favourite Shop App
 
-**Designed by Kilian Kane** 
+**Designed by Kilian Kane** <br>
 **Reference source: Course material Mobile app by Rob O’Connor, Siobhán Drohan and Eamonn De Leastar** 
 
 The app is composed of four screens:<br> 
@@ -37,5 +37,5 @@ During the develop of the app my main goal was to ensure that all the crud funct
 Other functions i wanted to add where, a search bar, a share button to social media of the user’s choice and add reviews of the shops with a rating system for the likes of customer service and choice. 
 
 ## Findings
-I did try to add firebase to help store the data but found the documentation on the subject hard to read and incorporate into the App. The same can be said for both adding the search bar and the social media share button. I did find that changing the look of the app quite enjoyable. 
+I did try to add firebase to help store the data but found the documentation on the subject hard to read and incorporate into the App. The same can be said for both adding the search bar and the social media share button. I did find that changing the look of the app quite enjoyable and designing the app icon fun and user friendly.
 
