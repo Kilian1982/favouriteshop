@@ -3,23 +3,32 @@
 **Designed by Kilian Kane** <br>
 **Reference source: Course material Mobile app by Rob O’Connor, Siobhán Drohan and Eamonn De Leastar** 
 
-The app is composed of four screens:<br> 
+The app is composed of five activities:<br><br> 
+**Activity one:**<br>
 The first displays any shops in the list with the name, description and an image of the shop.<br>
 ![Screenshot from 2019-04-11 14-01-25](https://user-images.githubusercontent.com/35728434/55959766-55a67200-5c63-11e9-8099-cbee347ac210.png)<br>
 In the on top of the first screen we have an action bar which leads to two more screens.<br>
-Pressing on the plus button leads to the second screen.<br>
+Pressing on the plus button leads to the second screen.<br><br>
+**Activity two and three:**<br>
 ![Screenshot from 2019-04-11 14-01-40](https://user-images.githubusercontent.com/35728434/55960314-60add200-5c64-11e9-9a3e-95972cf56aeb.png)<br>
 The second screen is where we can add a new shop to the list.<br>
 Here you can add:
 1. The name of the shop.
 2. A short description.
-3. Select the location.
-4. And add an image of the shop.<br>
+3. Select the location (this leads to activity three).<br>
+![Screenshot from 2019-04-11 14-35-52](https://user-images.githubusercontent.com/35728434/55961607-2b56b380-5c67-11e9-9326-bf9776564b76.png)<br>
+4. And add an image of the shop.(this leads to the picture's on the device)<br>
+![Screenshot from 2019-04-11 14-40-40](https://user-images.githubusercontent.com/35728434/55961929-d23b4f80-5c67-11e9-898e-3718d7d2d61f.png)<br>
+<br><br>
+**Activity  four:**<br>
 ![Screenshot from 2019-04-11 14-02-22](https://user-images.githubusercontent.com/35728434/55960344-74f1cf00-5c64-11e9-965b-0de3f0cc996b.png)<br>
 The third Screen can be accessed by clicking on the button which looks like a map.<br> 
 On this screen the user will be shown a map of all the shops they have in their list.<br>
-The user will also be able to access the details of the shop by clicking on the marker of each shop.<br>
+ ![Screenshot from 2019-04-11 14-02-39](https://user-images.githubusercontent.com/35728434/55961108-09a8fc80-5c66-11e9-9059-cc0d003a863e.png)<br>
+The user will also be able to access the details of the shop by clicking on the marker of each shop.<br><br>
+**Activity five**<br>
 The last screen can be accessed by clicking on a shop in the list on the first screen. The user is led to the fourth screen where you can edit the details of the shop and change the location and image attached to the shop. <br> 
+![Screenshot from 2019-04-11 14-03-02](https://user-images.githubusercontent.com/35728434/55961230-4d9c0180-5c66-11e9-9374-b63a90494893.png)<br>
 
 ## Overview
 The app does the following:
