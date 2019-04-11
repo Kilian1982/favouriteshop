@@ -24,7 +24,7 @@ Here you can add:
 ![Screenshot from 2019-04-11 14-02-22](https://user-images.githubusercontent.com/35728434/55960344-74f1cf00-5c64-11e9-965b-0de3f0cc996b.png)<br>
 The fourth activity can be accessed by clicking on the button which looks like a map.<br> 
 On this screen the user will be shown a map of all the shops they have in their list.<br>
- ![Screenshot from 2019-04-11 14-02-39](https://user-images.githubusercontent.com/35728434/55961108-09a8fc80-5c66-11e9-9059-cc0d003a863e.png)<br>
+![Screenshot from 2019-04-11 14-02-39](https://user-images.githubusercontent.com/35728434/55961108-09a8fc80-5c66-11e9-9059-cc0d003a863e.png)<br>
 The user will also be able to access the details of the shop by clicking on the marker of each shop.<br><br>
 **Activity five**<br>
 The fifth activity can be accessed by clicking on a shop in the list on the first activity. The user is led to the fifth screen where you can edit the details of the shop and change the location and image attached to the shop. <br> 
