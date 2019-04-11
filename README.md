@@ -5,6 +5,7 @@
 
 The app is composed of four screens:<br> 
 The first displays any shops in the list with the name, description and an image of the shop.<br>
+![Screenshot from 2019-04-11 14-01-25](https://user-images.githubusercontent.com/35728434/55959766-55a67200-5c63-11e9-8099-cbee347ac210.png)
 In the on top of the first screen we have an action bar which leads to two more screens.<br>
 Pressing on the plus button leads to the second screen.<br>
 The second screen is where we can add a new shop to the list.<br>
