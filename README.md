@@ -46,7 +46,7 @@ Before when having conversations with friends, family or strangers, shopping wou
 This was the inspiration for my App: A simple and quick way of showing your friends, family and others the shops you like and shops they may have an interest in.                
 
 ## Development and the future of the app.
-During the develop of the app my main goal was to ensure that all the crud functionally was working, the look of the app was appealing at first to the ladies and as time goes on add the ability to change the colour for the gents.<br>
+During the develop of the app my main goal was to ensure that all the crud functionally was working and that the look of the app was appealing at first to the ladies and then as time goes on add a settings activity to give the user the ability to change the colour as they saw fit.<br>
 Other functions i wanted to add where, a search bar, a share button to social media of the user’s choice and add reviews of the shops with a rating system for the likes of customer service and choice. 
 
 ## Findings
