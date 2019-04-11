@@ -5,14 +5,17 @@
 
 The app is composed of four screens:<br> 
 The first displays any shops in the list with the name, description and an image of the shop.<br>
-![Screenshot from 2019-04-11 14-01-25](https://user-images.githubusercontent.com/35728434/55959766-55a67200-5c63-11e9-8099-cbee347ac210.png)
+![Screenshot from 2019-04-11 14-01-25](https://user-images.githubusercontent.com/35728434/55959766-55a67200-5c63-11e9-8099-cbee347ac210.png)<br>
 In the on top of the first screen we have an action bar which leads to two more screens.<br>
 Pressing on the plus button leads to the second screen.<br>
+![Screenshot from 2019-04-11 14-01-40](https://user-images.githubusercontent.com/35728434/55960314-60add200-5c64-11e9-9a3e-95972cf56aeb.png)<br>
 The second screen is where we can add a new shop to the list.<br>
-Here you can add:   The name of the shop,
-                    A short description,
-                    Select the location,
-                    And add an image of the shop.<br>
+Here you can add:
+1. The name of the shop.
+2. A short description.
+3. Select the location.
+4. And add an image of the shop.<br>
+![Screenshot from 2019-04-11 14-02-22](https://user-images.githubusercontent.com/35728434/55960344-74f1cf00-5c64-11e9-965b-0de3f0cc996b.png)<br>
 The third Screen can be accessed by clicking on the button which looks like a map.<br> 
 On this screen the user will be shown a map of all the shops they have in their list.<br>
 The user will also be able to access the details of the shop by clicking on the marker of each shop.<br>
